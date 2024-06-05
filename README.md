@@ -31,7 +31,7 @@ Once you've installed wget you will need to pull down the file from github to th
       ```
 2. Pull down the script from github
     - ```bash
-      wget https://github.com/BrushidoArt/Setup-For-Brushido/blob/main/setup.sh
+      wget -O ~/Desktop/setup.sh https://raw.githubusercontent.com/BrushidoArt/Setup-For-Brushido/main/setup.sh
       ```
 
 3. Append the permissions

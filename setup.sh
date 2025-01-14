@@ -22,7 +22,7 @@ echo "Please enter a new password:"
 passwd
 
 # Navigate to Desktop directory and create a new directory
-cd /home/Ubuntu/Desktop/
+cd ~/Ubuntu/Desktop/
 mkdir -p stablea1111
 cd stablea1111
 
@@ -60,7 +60,7 @@ firefox \
   "http://127.0.0.1:7860/?__theme=dark"
 
 # Navigate to Desktop directory and create a new directory
-cd /home/Ubuntu/Desktop/stablea1111
+cd ~/Ubuntu/Desktop/stablea1111
 
 # Execute the script and wait for user input
 ./webui.sh

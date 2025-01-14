@@ -59,6 +59,9 @@ firefox \
   "https://github.com/Coyote-A/ultimate-upscale-for-automatic1111" \
   "http://127.0.0.1:7860/?__theme=dark"
 
+# Navigate to Desktop directory and create a new directory
+cd /home/Ubuntu/Desktop/stablea1111
+
 # Execute the script and wait for user input
 ./webui.sh
 

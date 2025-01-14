@@ -7,9 +7,8 @@ The purpose of this file is to automate the install process of the following:
 1. Installation of OS Repos/Updates
 2. Installation of Automatic1111
 3. Setting the timezone to CST (adjust as needed)
-4. Installation of Filezilla
-5. Installation of Discord
-6. Updating the users password
+4. Installation of Discord
+5. Updating the users password
 
 
 **Pre-Reqs**

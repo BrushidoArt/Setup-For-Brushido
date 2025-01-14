@@ -38,6 +38,10 @@ wait
 wget -q  https://raw.githubusercontent.com/BrushidoArt/Setup-For-Brushido/master/ui-config.json -O ~/Desktop/stablea1111/stable-diffusion-webui/ui-config.json
 wait
 
+# Download the ui-config.json script from the GitHub repository
+wget -q  https://raw.githubusercontent.com/BrushidoArt/Setup-For-Brushido/master/config.json -O ~/Desktop/stablea1111/stable-diffusion-webui/config.json
+wait
+
 # Navigate into stable-diffusion-webui
 cd ~/Desktop/stablea1111/stable-diffusion-webui/
 

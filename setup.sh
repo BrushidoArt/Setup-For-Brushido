@@ -37,9 +37,13 @@ wait
 # Modify permissions to make the script executable
 sudo chmod +x webui.sh
 
-# Execute the script and wait for user input
+# Execute the script
+echo "Starting the webui script. Once it is done initializing and has become idle, press Ctrl+C to stop it."
 ./webui.sh
-wait
+
+# The script blocks here until you manually stop webui.sh with Ctrl+C
+# Prompt user to continue
+read -p "Press ENTER once you have killed the script with Ctrl+C to continue..."
 
 # Navigate to Desktop directory and create a new directory
 cd ~/Desktop/stablea1111/stable-diffusion-webui

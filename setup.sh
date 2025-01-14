@@ -59,4 +59,4 @@ firefox \
 ./webui.sh
 
 # Final user interaction prompt
-echo "Please follow any additional on-screen instructions to proceed."
+echo "Please follow any additional on-screen instructions to proceed. Be sure to run the upscaler at least once to create the ESRGAN directory and download the items from Civitai and or the extensions section in the webui"

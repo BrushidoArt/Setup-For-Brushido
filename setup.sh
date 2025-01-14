@@ -8,10 +8,6 @@ wait
 sudo apt upgrade -y
 wait
 
-# Install FileZilla and run it
-sudo apt install filezilla -y
-wait
-
 # Install Discord
 wget -O discord.deb "https://discord.com/api/download?platform=linux&format=deb"
 sudo apt install ./discord.deb -y
@@ -38,11 +34,18 @@ wait
 wget -q https://raw.githubusercontent.com/AUTOMATIC1111/stable-diffusion-webui/master/webui.sh -O webui.sh
 wait
 
+# Download the ui-config.json script from the GitHub repository
+wget -q  https://raw.githubusercontent.com/BrushidoArt/Setup-For-Brushido/master/ui-config.json -O ~/Desktop/stablea1111/stable-diffusion-webui/ui-config.json
+wait
+
+# Navigate into stable-diffusion-webui
+cd ~/Desktop/stablea1111/stable-diffusion-webui/
+
+# Modify the line in webui-user.sh to include --xformers --no-half-vae
+sed -i 's/^#export COMMANDLINE_ARGS=""/export COMMANDLINE_ARGS="--xformers --no-half-vae"/' webui-user.sh
+
 # Modify permissions to make the script executable
 sudo chmod +x webui.sh
-
-# Run Filezilla
-filezilla &
 
 # Execute the script and wait for user input
 ./webui.sh

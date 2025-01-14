@@ -47,6 +47,13 @@ sed -i 's/^#export COMMANDLINE_ARGS=""/export COMMANDLINE_ARGS="--xformers --no-
 # Modify permissions to make the script executable
 sudo chmod +x webui.sh
 
+# Launch Firefox with the specified URLs
+firefox \
+  "https://openmodeldb.info/models/4x-Remacri" \
+  "https://civitai.com/models/835655/illustrious-xl-personal-merge-noob-v-pred05-test-merge-updated" \
+  "https://civitai.com/models/503815/nova-furry-xl?modelVersionId=1164762" \
+  "https://github.com/Coyote-A/ultimate-upscale-for-automatic1111"
+
 # Execute the script and wait for user input
 ./webui.sh
 

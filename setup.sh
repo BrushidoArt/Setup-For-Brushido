@@ -65,7 +65,8 @@ firefox \
   "https://civitai.com/models/835655/illustrious-xl-personal-merge-noob-v-pred05-test-merge-updated" \
   "https://civitai.com/models/503815/nova-furry-xl?modelVersionId=1164762" \
   "https://github.com/Coyote-A/ultimate-upscale-for-automatic1111" \
-  "http://127.0.0.1:7860/?__theme=dark"
+  "http://127.0.0.1:7860/?__theme=dark" \
+  "https://civitai.com/models/296576/sdxl-vae"
 
 # Final user interaction prompt
 echo "Please follow any additional on-screen instructions to proceed. Be sure to run the upscaler at least once to create the ESRGAN directory and download the items from Civitai and or the extensions section in the webui"

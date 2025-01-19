@@ -13,6 +13,10 @@ wget -O discord.deb "https://discord.com/api/download?platform=linux&format=deb"
 sudo apt install ./discord.deb -y
 wait
 
+# Install inotify-tools
+sudo apt-get update
+sudo apt-get install inotify-tools
+
 # Set NTP synchronization and timezone
 sudo timedatectl set-ntp yes
 sudo timedatectl set-timezone America/Chicago

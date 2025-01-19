@@ -13,11 +13,13 @@ mkdir -p "$DEST"
 # Enter a loop that waits for filesystem events
 while true
 do
-  # Block until there's a create, modify, or move event in SRC.
-  # -r for recursive, so it also covers subdirectories (if any).
-  inotifywait -r -e create,modify,move "$SRC"
+  # -r for recursive
+  # -e create,modify,move events trigger a sync
+  # --exclude '\.tmp$' ignores files ending in .tmp
+  inotifywait -r --exclude '\.tmp$' -e create,modify,move "$SRC"
 
   # When an event is detected, use rsync to copy only new files.
   # --ignore-existing avoids overwriting files that already exist at the destination.
-  rsync -av --ignore-existing "$SRC" "$DEST"
+  # --exclude '*.tmp' skips copying any .tmp files that might appear.
+  rsync -av --ignore-existing --exclude '*.tmp' "$SRC" "$DEST"
 done

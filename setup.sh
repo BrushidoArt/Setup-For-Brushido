@@ -15,7 +15,7 @@ wait
 
 # Install inotify-tools
 sudo apt-get update
-sudo apt-get install inotify-tools
+sudo apt-get install inotify-tools -y
 
 # Set NTP synchronization and timezone
 sudo timedatectl set-ntp yes

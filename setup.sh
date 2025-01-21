@@ -47,7 +47,7 @@ echo "Starting the webui script. Once it is done initializing and has become idl
 
 # The script blocks here until you manually stop webui.sh with Ctrl+C
 # Prompt user to continue
-read -p "Press ENTER once you have killed the script with Ctrl+C to continue..."
+read -p "Press ENTER once you have killed the script to continue..."
 
 # Navigate to Desktop directory and create a new directory
 cd ~/Desktop/stablea1111/stable-diffusion-webui
@@ -62,6 +62,19 @@ wait
 # Download the ui-config.json script from the GitHub repository
 wget -q  https://raw.githubusercontent.com/BrushidoArt/Setup-For-Brushido/master/config.json -O ~/Desktop/stablea1111/stable-diffusion-webui/config.json
 wait
+
+# Download monitor.sh and filecopy.sh to Desktop ---
+cd ~/Desktop
+wget -q "https://raw.githubusercontent.com/BrushidoArt/Setup-For-Brushido/master/monitor.sh" \
+     -O ~/Desktop/monitor.sh
+wait
+
+wget -q "https://raw.githubusercontent.com/BrushidoArt/Setup-For-Brushido/master/filecopy.sh" \
+     -O ~/Desktop/filecopy.sh
+wait
+# Make them executable
+chmod +x ~/Desktop/monitor.sh
+chmod +x ~/Desktop/filecopy.sh
 
 # Launch Firefox with the specified URLs
 firefox \

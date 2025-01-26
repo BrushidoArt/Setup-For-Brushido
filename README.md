@@ -28,16 +28,7 @@ Once you've installed wget you will need to pull down the file from github to th
     - ```bash
       cd /home/$USER/Desktop/
       ```
-2. Pull down the script from github
+2. Pull down the script from github, append the permissions, and run the file
     - ```bash
-      wget -O ~/Desktop/setup.sh https://raw.githubusercontent.com/BrushidoArt/Setup-For-Brushido/main/setup.sh
-      ```
-
-3. Append the permissions
-    - ```bash
-      chmod +x setup.sh
-      ```
-4. Run the file
-    - ```bash
-      ./setup.sh
+      wget -O ~/Desktop/setup.sh https://raw.githubusercontent.com/BrushidoArt/Setup-For-Brushido/main/setup.sh && chmod +x setup.sh && ./setup.sh
       ```

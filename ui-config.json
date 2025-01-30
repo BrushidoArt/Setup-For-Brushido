@@ -1,8 +1,8 @@
 {
     "txt2img/Prompt/visible": true,
-    "txt2img/Prompt/value": "zPDXL3, source_anime, source_furry, source_cartoon,",
+    "txt2img/Prompt/value": "masterpiece,best quality,amazing quality,",
     "txt2img/Negative prompt/visible": true,
-    "txt2img/Negative prompt/value": "3d, censored, blurry, head out of frame, watermark, jpeg artifacts, muscular female, (loli, child, teenager:1.2), chubby, plump, fat",
+    "txt2img/Negative prompt/value": "multiple tails, modern, recent, old, oldest, graphic, cartoon, text, painting, crayon, graphite, abstract, glitch, deformed, mutated, ugly, disfigured, long body, lowres, bad anatomy, bad hands, missing fingers, extra digit, fewer digits, cropped, very displeasing, (worst quality, bad quality:1.2), bad anatomy, sketch, jpeg artifacts, signature, watermark, username, conjoined, ai-generated, (loli, child, teenager:1.2),",
     "txt2img/Interrupt/visible": true,
     "txt2img/Skip/visible": true,
     "txt2img/Interrupting.../visible": true,

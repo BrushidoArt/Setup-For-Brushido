@@ -34,14 +34,6 @@ cd ~/Desktop/
 mkdir -p stablea1111
 cd ~/Desktop/stablea1111/
 
-# Launch Firefox with the specified URLs
-firefox \
-  "https://openmodeldb.info/models/4x-Remacri" \
-  "https://civitai.com/models/835655/illustrious-xl-personal-merge-noob-v-pred05-test-merge-updated" \
-  "https://civitai.com/models/503815/nova-furry-xl?modelVersionId=1164762" \
-  "https://github.com/Coyote-A/ultimate-upscale-for-automatic1111" \
-  "http://127.0.0.1:7860/?__theme=dark" \
-  "https://civitai.com/models/296576/sdxl-vae"
 
 # Download the webui script from the GitHub repository
 wget -q https://raw.githubusercontent.com/AUTOMATIC1111/stable-diffusion-webui/master/webui.sh -O webui.sh
@@ -84,6 +76,15 @@ wait
 # Make them executable
 chmod +x ~/Desktop/monitor.sh
 chmod +x ~/Desktop/filecopy.sh
+
+# Launch Firefox with the specified URLs
+firefox \
+  "https://openmodeldb.info/models/4x-Remacri" \
+  "https://civitai.com/models/835655/illustrious-xl-personal-merge-noob-v-pred05-test-merge-updated" \
+  "https://civitai.com/models/503815/nova-furry-xl?modelVersionId=1164762" \
+  "https://github.com/Coyote-A/ultimate-upscale-for-automatic1111" \
+  "http://127.0.0.1:7860/?__theme=dark" \
+  "https://civitai.com/models/296576/sdxl-vae"
 
 # Final user interaction prompt
 echo "Please follow any additional on-screen instructions to proceed. Be sure to run the upscaler at least once to create the ESRGAN directory and download the items from Civitai and or the extensions section in the webui"

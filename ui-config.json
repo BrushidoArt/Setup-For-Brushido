@@ -22,7 +22,7 @@
     "customscript/sampler.py/txt2img/Schedule type/visible": true,
     "customscript/sampler.py/txt2img/Schedule type/value": "Automatic",
     "customscript/sampler.py/txt2img/Sampling steps/visible": true,
-    "customscript/sampler.py/txt2img/Sampling steps/value": 20,
+    "customscript/sampler.py/txt2img/Sampling steps/value": 40,
     "customscript/sampler.py/txt2img/Sampling steps/minimum": 1,
     "customscript/sampler.py/txt2img/Sampling steps/maximum": 150,
     "customscript/sampler.py/txt2img/Sampling steps/step": 1,

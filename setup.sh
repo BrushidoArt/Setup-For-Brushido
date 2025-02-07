@@ -1,11 +1,7 @@
 #!/bin/bash
 
 # Update package lists
-sudo apt update
-wait
-
-# Upgrade all installed packages
-sudo apt upgrade -y
+sudo apt update && sudo apt upgrade -y
 wait
 
 # Install Discord

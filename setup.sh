@@ -77,7 +77,7 @@ chmod +x ~/Desktop/filecopy.sh
 firefox \
   "https://openmodeldb.info/models/4x-Remacri" \
   "https://civitai.com/models/835655/illustrious-xl-personal-merge-noob-v-pred05-test-merge-updated" \
-  "https://civitai.com/models/503815/nova-furry-xl?modelVersionId=1164762" \
+  "https://civitai.com/models/503815?modelVersionId=1402403" \
   "https://github.com/Coyote-A/ultimate-upscale-for-automatic1111" \
   "http://127.0.0.1:7860/?__theme=dark" \
   "https://civitai.com/models/296576/sdxl-vae"
